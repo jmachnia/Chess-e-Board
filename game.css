@@ -1,0 +1,117 @@
+#board
+{
+    height: 400px;
+    width: 400px;
+    border: 2px solid rgb(55, 51, 51);
+    margin: 50px auto;
+
+    background-position: center, relative;
+    z-index: 1;
+    background-size: contain;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+.coordinate-light
+{
+    color: rgba(181,136,99,255);
+}
+.coordinate-dark
+{
+    color: rgba(240,217,181,255);
+}
+
+.piece
+{
+    margin: auto;
+    background-position: center, absolute;
+    z-index: 2;
+    background-size: 40px 40px;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+.br {}
+.bn {}
+.bb {}
+.bq {}
+.bk {}
+.bp {}
+.wr {}
+.wn {}
+.wb {}
+.wq {}
+.wk {}
+.wp {}
+
+.square-88 {background-position: 5px 5px;}
+.square-78 {background-position: 55px 5px;}
+.square-68 {background-position: 105px 5px;}
+.square-58 {background-position: 155px 5px;}
+.square-48 {background-position: 205px 5px;}
+.square-38 {background-position: 255px 5px;}
+.square-28 {background-position: 305px 5px;}
+.square-18 {background-position: 355px 5px;}
+
+.square-87 {background-position: 5px 55px;}
+.square-77 {background-position: 55px 55px;}
+.square-67 {background-position: 105px 55px;}
+.square-57 {background-position: 155px 55px;}
+.square-47 {background-position: 205px 55px;}
+.square-37 {background-position: 255px 55px;}
+.square-27 {background-position: 305px 55px;}
+.square-17 {background-position: 355px 55px;}
+
+.square-86 {background-position: 5px 105px;}
+.square-76 {background-position: 55px 105px;}
+.square-66 {background-position: 105px 105px;}
+.square-56 {background-position: 155px 105px;}
+.square-46 {background-position: 205px 105px;}
+.square-36 {background-position: 255px 105px;}
+.square-26 {background-position: 305px 105px;}
+.square-16 {background-position: 355px 105px;}
+
+.square-85 {background-position: 5px 155px;}
+.square-75 {background-position: 55px 155px;}
+.square-65 {background-position: 105px 155px;}
+.square-55 {background-position: 155px 155px;}
+.square-45 {background-position: 205px 155px;}
+.square-35 {background-position: 255px 155px;}
+.square-25 {background-position: 305px 155px;}
+.square-15 {background-position: 355px 155px;}
+
+.square-84 {background-position: 5px 205px;}
+.square-74 {background-position: 55px 205px;}
+.square-64 {background-position: 105px 205px;}
+.square-54 {background-position: 155px 205px;}
+.square-44 {background-position: 205px 205px;}
+.square-34 {background-position: 255px 205px;}
+.square-24 {background-position: 305px 205px;}
+.square-14 {background-position: 355px 205px;}
+
+.square-83 {background-position: 5px 255px;}
+.square-73 {background-position: 55px 255px;}
+.square-63 {background-position: 105px 255px;}
+.square-53 {background-position: 155px 255px;}
+.square-43 {background-position: 205px 255px;}
+.square-33 {background-position: 255px 255px;}
+.square-23 {background-position: 305px 255px;}
+.square-13 {background-position: 355px 255px;}
+
+.square-82 {background-position: 5px 305px;}
+.square-72 {background-position: 55px 305px;}
+.square-62 {background-position: 105px 305px;}
+.square-52 {background-position: 155px 305px;}
+.square-42 {background-position: 205px 305px;}
+.square-32 {background-position: 255px 305px;}
+.square-22 {background-position: 305px 305px;}
+.square-12 {background-position: 355px 305px;}
+
+.square-81 {background-position: 5px 355px;}
+.square-71 {background-position: 55px 355px;}
+.square-61 {background-position: 105px 355px;}
+.square-51 {background-position: 155px 355px;}
+.square-41 {background-position: 205px 355px;}
+.square-31 {background-position: 255px 355px;}
+.square-21 {background-position: 305px 355px;}
+.square-11 {background-position: 355px 355px;}
