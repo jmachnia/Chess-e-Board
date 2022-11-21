@@ -23,15 +23,15 @@
 .timer-blacks
 {
     height: 20px;
-    color:rgb(55, 51, 51);
-    background-color: whitesmoke;
+    color:whitesmoke;
+    background-color:rgb(55, 51, 51);
 }
 
 .timer-whites
 {
     height: 20px;
-    color:whitesmoke;
-    background-color:rgb(55, 51, 51);
+    color:rgb(55, 51, 51);
+    background-color: whitesmoke;
 }
 
 #username
