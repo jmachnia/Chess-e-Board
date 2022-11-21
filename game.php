@@ -26,6 +26,7 @@
     </head>
     <body>
         <h1 class="header">Electronic chess board</h1>
+        <p><a href="logout_both_players.php">Logout both</a></p>
         <div id="getFEN">
             <p><button type="button">Get FEN code</button></p>
         </div>
@@ -98,6 +99,5 @@
                 ?>
             </div>
         </div>
-        <p><a href="logout_both_players.php">Logout both</a></p>
     </body>
 </html>

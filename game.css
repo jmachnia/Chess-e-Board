@@ -1,12 +1,11 @@
 #box
 {
     float: left;
-    padding: 100px;
+    padding: 50px;
 }
 
 #timer
 {
-    float: left;
     left: 0;
     top: 200px;
     height: 40px;
@@ -37,7 +36,9 @@
 #username
 {
     color: gold;
-    font-size: 40px;
+    font-size: 20px;
+    position: right;
+    background-attachment: scroll;
 }
 
 #board
