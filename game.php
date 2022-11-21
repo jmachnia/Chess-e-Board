@@ -30,7 +30,7 @@
         <div id="getFEN">
             <p><button type="button">Get FEN code</button></p>
         </div>
-        <div id="box">
+
             <div id="timer">
                 <text class="timer-blacks">0:00</text>
                 <text class="timer-whites">0:00</text>
@@ -98,6 +98,6 @@
                     echo $_SESSION['username_whites'];
                 ?>
             </div>
-        </div>
+
     </body>
 </html>
