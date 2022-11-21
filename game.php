@@ -26,19 +26,16 @@
     </head>
     <body>
         <h1 class="header">Electronic chess board</h1>
-        <p><a href="logout_both_players.php">Logout both</a></p>
+        <p></p><a href="logout_both_players.php">Logout both</a></p>
         <div id="getFEN">
-            <p><button type="button">Get FEN code</button></p>
+            <button type="button">Get FEN code</button>
         </div>
-
-            <div id="timer">
+        <div id="box">
+            <div>
+                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                 <text class="timer-blacks">0:00</text>
+                <br />
                 <text class="timer-whites">0:00</text>
-            </div>
-            <div id="username">
-                <?php
-                    echo $_SESSION['username_blacks'];
-                ?>
             </div>
             <div id="board" style="background-image:url('images/chess_board1.png');">
                 <svg viewBox="0 0 100 100" class="coordinates">
@@ -94,10 +91,15 @@
                 <img class="piece wp square-11" src="images/white_pawn.png" />
             </div>
             <div id="username">
+                <br /><br />
+                <?php
+                    echo $_SESSION['username_blacks'];
+                ?>
+                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                 <?php
                     echo $_SESSION['username_whites'];
                 ?>
             </div>
-
+        </div>
     </body>
 </html>
