@@ -73,22 +73,22 @@
                 <img class="piece bp square-37" src="images/black_pawn.png" />
                 <img class="piece bp square-27" src="images/black_pawn.png" />
                 <img class="piece bp square-17" src="images/black_pawn.png" />
-                <img class="piece wr square-82" src="images/white_rook.png" />
-                <img class="piece wn square-72" src="images/white_knight.png" />
-                <img class="piece wb square-62" src="images/white_bishop.png" />
-                <img class="piece wq square-52" src="images/white_queen.png" />
-                <img class="piece wk square-42" src="images/white_king.png" />
-                <img class="piece wb square-32" src="images/white_bishop.png" />
-                <img class="piece wk square-22" src="images/white_knight.png" />
-                <img class="piece wr square-12" src="images/white_rook.png" />
-                <img class="piece wp square-81" src="images/white_pawn.png" />
-                <img class="piece wp square-71" src="images/white_pawn.png" />
-                <img class="piece wp square-61" src="images/white_pawn.png" />
-                <img class="piece wp square-51" src="images/white_pawn.png" />
-                <img class="piece wp square-41" src="images/white_pawn.png" />
-                <img class="piece wp square-31" src="images/white_pawn.png" />
-                <img class="piece wp square-21" src="images/white_pawn.png" />
-                <img class="piece wp square-11" src="images/white_pawn.png" />
+                <img class="piece wr square-82" src="images/white_pawn.png" />
+                <img class="piece wn square-72" src="images/white_pawn.png" />
+                <img class="piece wb square-62" src="images/white_pawn.png" />
+                <img class="piece wq square-52" src="images/white_pawn.png" />
+                <img class="piece wk square-42" src="images/white_pawn.png" />
+                <img class="piece wb square-32" src="images/white_pawn.png" />
+                <img class="piece wk square-22" src="images/white_pawn.png" />
+                <img class="piece wr square-12" src="images/white_pawn.png" />
+                <img class="piece wp square-81" src="images/white_rook.png" />
+                <img class="piece wp square-71" src="images/white_knight.png" />
+                <img class="piece wp square-61" src="images/white_bishop.png" />
+                <img class="piece wp square-51" src="images/white_queen.png" />
+                <img class="piece wp square-41" src="images/white_king.png" />
+                <img class="piece wp square-31" src="images/white_bishop.png" />
+                <img class="piece wp square-21" src="images/white_knight.png" />
+                <img class="piece wp square-11" src="images/white_rook.png" />
             </div>
             <div id="username">
                 <br /><br />
