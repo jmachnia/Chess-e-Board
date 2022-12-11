@@ -23,6 +23,8 @@
         <title>Chess e-Board</title>
         <link href="start_page.css" type="text/css" rel="stylesheet" />
         <link href="game.css" type="text/css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.2/mqttws31.min.js" type="text/javascript"></script>
+        <script src="demo.js" type="text/javascript"></script>
     </head>
     <body>
         <h1 class="header">Electronic chess board</h1>
@@ -32,10 +34,12 @@
         </div>
         <div id="box">
             <div>
-                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-                <text class="timer-blacks">0:00</text>
-                <br />
-                <text class="timer-whites">0:00</text>
+                <form id="connection-information-form">
+                    <input type="button" onclick="startConnect()" value="Connect"><br />
+                    <input type="button" onclick="startDisconnect()" value="Disconnect">
+                </form>
+                <br /><br /><br /><br /><br /><br /><br />
+                <div id="messages"></div>
             </div>
             <div id="board" style="background-image:url('images/chess_board1.png');">
                 <svg viewBox="0 0 100 100" class="coordinates">
