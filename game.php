@@ -35,12 +35,13 @@
             <button type="button">Get FEN code</button>
         </div>
         <div id="box">
-            <div id="timer">
+            <div>
                 <script type="text/javascript">
                     startConnectTimerBlacks();
                     startConnectTimerWhites();
                 </script>
-                <div id="timer-blacks"></div>
+                <br /><br /><br /><br /><br /><br /><br /><br /><br />
+                <div id="timer-blacks"></div><br />
                 <div id="timer-whites"></div>
             </div>
             <div id="board" style="background-image:url('images/chess_board1.png');">

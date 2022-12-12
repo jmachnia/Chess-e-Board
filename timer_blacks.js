@@ -1,4 +1,4 @@
-// Called after form input is processed
+// Called after both players are logged in
 function startConnectTimerBlacks() {
     // Generate a random client ID
     clientID = "clientID-" + parseInt(Math.random() * 100);
@@ -6,10 +6,6 @@ function startConnectTimerBlacks() {
     // Fetch the hostname/IP address and port number
     host = "broker.mqttdashboard.com";
     port = "8000";
-
-    // Print output for the user in the messages div
-    // document.getElementById("messages").innerHTML = '<span>Connecting to: ' + host + ' on port: ' + port + '</span><br/>';
-    // document.getElementById("messages").innerHTML += '<span>Using the following client value: ' + clientID + '</span><br/>';
 
     // Initialize new Paho client connection
     client = new Paho.MQTT.Client(host, Number(port), clientID);
@@ -29,9 +25,6 @@ function onConnect() {
     // Fetch the MQTT topic
     topic = "Chess e-Board timer blacks";
 
-    // Print output for the user in the messages div
-    // document.getElementById("messages").innerHTML += '<span>Subscribing to: ' + topic + '</span><br/>';
-
     // Subscribe to the requested topic
     client.subscribe(topic);
 }
@@ -47,19 +40,10 @@ function onConnectionLost(responseObject) {
 // Called when a message arrives
 function onMessageArrived(message) {
     console.log("onMessageArrived: " + message.payloadString);
-    document.getElementById("timer-blacks").innerHTML = '<span>' + message.payloadString + '</span><br/>';
-    // updateScroll(); // Scroll to bottom of window
+    document.getElementById("timer-blacks").innerHTML = '<span>' + message.payloadString + '</span>';
 }
 
-// Called when the disconnection button is pressed
+// Called when both players log out
 function startDisconnectTimerBlacks() {
     client.disconnect();
-    // document.getElementById("timer-blacks").innerHTML = '<span>Disconnected</span><br/>';
-    // updateScroll(); // Scroll to bottom of window
-}
-
-// Updates #messages div to auto-scroll
-function updateScroll() {
-    var element = document.getElementById("timer-blacks");
-    element.scrollTop = element.scrollHeight;
 }
