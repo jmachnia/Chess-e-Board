@@ -37,8 +37,15 @@
         <meta http-equiv="pragma"
             content="no-cache" />
         <link href="start_page.css" type="text/css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.2/mqttws31.min.js" type="text/javascript"></script>
+        <script src="timer_blacks.js" type="text/javascript"></script>
+        <script src="timer_whites.js" type="text/javascript"></script>
     </head>
     <body>
+        <script type="text/javascript">
+            startDisconnectTimerBlacks();
+            startDisconnectTimerWhites();
+        </script>
         <h1 class="header">Electronic chess board</h1>
         <h3 class="header">Who's playing?</h3>
         <div id="player">

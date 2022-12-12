@@ -25,6 +25,8 @@
         <link href="game.css" type="text/css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.2/mqttws31.min.js" type="text/javascript"></script>
         <script src="demo.js" type="text/javascript"></script>
+        <script src="timer_blacks.js" type="text/javascript"></script>
+        <script src="timer_whites.js" type="text/javascript"></script>
     </head>
     <body>
         <h1 class="header">Electronic chess board</h1>
@@ -33,13 +35,13 @@
             <button type="button">Get FEN code</button>
         </div>
         <div id="box">
-            <div>
-                <form id="connection-information-form">
-                    <input type="button" onclick="startConnect()" value="Connect"><br />
-                    <input type="button" onclick="startDisconnect()" value="Disconnect">
-                </form>
-                <br /><br /><br /><br /><br /><br /><br />
-                <div id="messages"></div>
+            <div id="timer">
+                <script type="text/javascript">
+                    startConnectTimerBlacks();
+                    startConnectTimerWhites();
+                </script>
+                <div id="timer-blacks"></div>
+                <div id="timer-whites"></div>
             </div>
             <div id="board" style="background-image:url('images/chess_board1.png');">
                 <svg viewBox="0 0 100 100" class="coordinates">

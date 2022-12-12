@@ -7,7 +7,6 @@
 
 #timer
 {
-    top: 500px;
     height: 40px;
     width: 50px;
     border: 2px solid rgb(55, 51, 51);
@@ -20,6 +19,8 @@
 
 #timer-blacks
 {
+    height: 20px;
+    width: 50px;
     border: 1px solid rgb(55, 51, 51);
     color:whitesmoke;
     background-color:rgb(55, 51, 51);
@@ -27,6 +28,8 @@
 
 #timer-whites
 {
+    height: 20px;
+    width: 50px;
     border: 1px solid rgb(55, 51, 51);
     color:rgb(55, 51, 51);
     background-color: whitesmoke;
