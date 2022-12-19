@@ -24,22 +24,23 @@
         <link href="start_page.css" type="text/css" rel="stylesheet" />
         <link href="game.css" type="text/css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.2/mqttws31.min.js" type="text/javascript"></script>
-        <script src="demo.js" type="text/javascript"></script>
         <script src="timer_blacks.js" type="text/javascript"></script>
         <script src="timer_whites.js" type="text/javascript"></script>
+        <script src="getFEN.js" type="text/javascript"></script>
     </head>
     <body>
         <h1 class="header">Electronic chess board</h1>
         <p></p><a href="logout_both_players.php">Logout both</a></p>
         <div id="getFEN">
-            <button type="button">Get FEN code</button>
+            <input type="button" onclick="getFEN()" value="Get FEN code">
         </div>
         <div id="box">
-            <div>
-                <script type="text/javascript">
-                    startConnectTimerBlacks();
-                    startConnectTimerWhites();
-                </script>
+            <script type="text/javascript">
+                startConnectTimerBlacks();
+                startConnectTimerWhites();
+                startConnectGetFEN();
+            </script>
+            <div id="timer">
                 <br /><br /><br /><br /><br /><br /><br /><br /><br />
                 <div id="timer-blacks"></div><br />
                 <div id="timer-whites"></div>
