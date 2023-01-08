@@ -24,7 +24,7 @@ function startConnectTimerWhites() {
 function onConnect() {
     // Fetch the MQTT topic
     topic = "Chess e-Board timer whites";
-
+    document.getElementById("getFEN").innerHTML = '<span>' + topic + '</span>';
     // Subscribe to the requested topic
     client.subscribe(topic);
 }

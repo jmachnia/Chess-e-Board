@@ -1,5 +1,5 @@
 // Called after both players are logged in
-function startConnectTimerBlacks() {
+function startConnectGameResult() {
     // Generate a random client ID
     clientID = "clientID-" + parseInt(Math.random() * 100);
 
@@ -23,7 +23,7 @@ function startConnectTimerBlacks() {
 // Called when the client connects
 function onConnect() {
     // Fetch the MQTT topic
-    topic = "Chess e-Board timer blacks";
+    topic = "Chess e-Board game result";
     document.getElementById("getFEN").innerHTML = '<span>' + topic + '</span>';
     // Subscribe to the requested topic
     client.subscribe(topic);
@@ -40,7 +40,7 @@ function onConnectionLost(responseObject) {
 // Called when a message arrives
 function onMessageArrived(message) {
     console.log("onMessageArrived: " + message.payloadString);
-    document.getElementById("timer-blacks").innerHTML = '<span>' + message.payloadString + '</span>';
+    document.getElementById("game-result").innerHTML = '<span>' + message.payloadString + '</span>';
 }
 
 // Called when both players log out

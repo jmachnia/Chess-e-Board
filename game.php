@@ -27,20 +27,22 @@
         <script src="timer_blacks.js" type="text/javascript"></script>
         <script src="timer_whites.js" type="text/javascript"></script>
         <script src="getFEN.js" type="text/javascript"></script>
+        <script src="game_result.js" type="text/javascript"></script>
     </head>
     <body>
+        <script type="text/javascript">
+            startConnectTimerBlacks();
+            startConnectTimerWhites();
+            startConnectGetFEN();
+            startConnectGameResult();
+        </script>
         <h1 class="header">Electronic chess board</h1>
-        <p></p><a href="logout_both_players.php">Logout both</a></p>
+        <p><a href="logout_both_players.php">Logout both</a></p>
         <div id="getFEN">
             <input type="button" onclick="getFEN()" value="Get FEN code">
         </div>
         <div id="box">
-            <script type="text/javascript">
-                startConnectTimerBlacks();
-                startConnectTimerWhites();
-                startConnectGetFEN();
-            </script>
-            <div id="timer">
+            <div>
                 <br /><br /><br /><br /><br /><br /><br /><br /><br />
                 <div id="timer-blacks"></div><br />
                 <div id="timer-whites"></div>
